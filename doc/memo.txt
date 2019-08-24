@@ -1,0 +1,9 @@
+Monixについて // Future との違いを主に
+
+Scala11,12, で使用可能 // Scala13 では使えない
+
+subproectだけ使う  でもできる
+
+
+
+
