@@ -55,3 +55,13 @@ ver 3.x から、Cats に依存しており、便利
   他にも、Applicativeとかcats.effect.Sync(何者？)とかをまかなっている。
 
 Companion object に元のクラスをextends して云々。。。というのをやった覚えがある。
+
+Tutorials
+
+・バッチ処理によって、順番をきめられる並列しょりができる
+
+- The Naive Way
+  Task.gather
+
+ Task.apply,
+ Task.fork task をforkすることができる？
