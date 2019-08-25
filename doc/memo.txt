@@ -65,3 +65,8 @@ Tutorials
 
  Task.apply,
  Task.fork task をforkすることができる？
+
+ gather だと、際限なく並列処理をしてしまうため困る。
+
+
+

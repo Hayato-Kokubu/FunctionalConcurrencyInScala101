@@ -12,11 +12,11 @@ object Main extends App {
   // The list of all tasks needed for execution
   val tasks = items.map(i => Task(i * 2))
 
+  val batched = tasks.sliding(10,10) // Iteratore がつく
+    .map(b => Task.gather(b)).toIterable
 
   val aggregate = Task.gather(tasks).map(_.toList)
-  val aggregateNoOrder = Task.gatherUnordered(tasks).map(_.toList)
   // Evaluation:
   aggregate.foreach(println)
-  aggregateNoOrder.foreach(println)
 
 }
