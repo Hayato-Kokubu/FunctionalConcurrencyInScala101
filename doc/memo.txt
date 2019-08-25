@@ -5,5 +5,32 @@ Scala11,12, で使用可能 // Scala13 では使えない
 subproectだけ使う  でもできる
 
 
+並列処理をする際にはScheduler が必要
+Scheduler が、ExecutionContext の代わりになる？
+// Scheduler とはなにもの？
+
+Task: Lazy Future
+// Future はeagerである 即時実行してしまう
+
+
+非同期処理を便利にするMonix
+https://qiita.com/ichizin/items/bc17e5a127a01189966c
+
+・Future: 実行中か成功か失敗かわからない値
+・Task  : 実行中か成功か失敗かわからない関数 << 実行をこちらがしていしないと計算されない
+
+
+Scheduler には、Akka Scheduler もある
+// Akka に依存しているため、とてもheavy
+
+
+・開始をプログラマ側で指定できる
+・scheduler がいい
+
+
+とても基本的な話
+
+Future が即時実行であることを示すコードを作れ
+
 
 
