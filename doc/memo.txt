@@ -46,3 +46,12 @@ Obeservableは宣言だけして、
 
 dumpの使い方がいまいちわからん。。。
 
+・Typelevel Cats Integration
+
+ver 3.x から、Cats に依存しており、便利
+
+例) Task はMonad である。
+    => で、出た〜 Monad!
+  他にも、Applicativeとかcats.effect.Sync(何者？)とかをまかなっている。
+
+Companion object に元のクラスをextends して云々。。。というのをやった覚えがある。
