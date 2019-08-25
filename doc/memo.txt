@@ -1,6 +1,7 @@
 Monixについて // Future との違いを主に
 
 Scala11,12, で使用可能 // Scala13 では使えない
+業務で使うMonix のversion は"3.0.0-RC1"
 
 subproectだけ使う  でもできる
 
@@ -29,8 +30,19 @@ Scheduler には、Akka Scheduler もある
 
 
 とても基本的な話
+  Future が即時実行であることを示すコードを作れ
 
-Future が即時実行であることを示すコードを作れ
 
+どうやってTaskの計算を実行指示するか？
+=> scheduler で、実行を制御できる
 
+Observable というのが出てきた
+  これはmonad っぽい
+Obeservableは宣言だけして、
+実行するにはsubscribe を呼べばいい
+  Cancelable になる。
+  実際、cancelメソッドで中止できる。
+  => Futureではそんなことあったっけ？
+
+dumpの使い方がいまいちわからん。。。
 
